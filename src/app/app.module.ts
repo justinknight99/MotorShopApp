@@ -16,10 +16,10 @@ import { MasukPage } from '../pages/masuk/masuk';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
     TabsPage,
-    MasukPage
+    MasukPage,
+    ContactPage
   ],
   imports: [
     BrowserModule,
@@ -29,10 +29,10 @@ import { MasukPage } from '../pages/masuk/masuk';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
     TabsPage,
-    MasukPage
+    MasukPage,
+    ContactPage
   ],
   providers: [
     StatusBar,
