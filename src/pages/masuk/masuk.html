@@ -1,0 +1,37 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <ion-title></ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    <ion-content padding class="background">
+      <div text-center>
+        <img class="logo" src="">
+        <h3 style="color: #47525e">Motor Shop</h3>
+      </div>
+    
+      <ion-list>
+    
+        <ion-item>
+          <ion-label floating color="biruTua">Nama</ion-label>
+          <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label floating color="biruTua">Email</ion-label>
+          <ion-input type="text" [(ngModel)]="email"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label floating color="biruTua">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+    
+      </ion-list>
+    
+      <button ion-button block color="biruTua" (click)="daftar()">Masuk</button>
+    
+    </ion-content>
