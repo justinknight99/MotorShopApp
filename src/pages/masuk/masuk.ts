@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the MasukPage page.
@@ -21,5 +22,10 @@ export class MasukPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MasukPage');
   }
+
+  daftar(){
+    this.navCtrl.setRoot(TabsPage)
+  }
+
 
 }
