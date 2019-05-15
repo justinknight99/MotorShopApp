@@ -13,7 +13,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MasukPage } from '../pages/masuk/masuk';
 import { HistoryPage } from '../pages/history/history';
 import { BelanjaPage } from '../pages/belanja/belanja';
+<<<<<<< HEAD
 import { DaftarPage } from '../pages/daftar/daftar';
+=======
+>>>>>>> 507ece62d2c23d3fce2177e18305f2df42d99f10
 
 @NgModule({
   declarations: [
@@ -24,8 +27,12 @@ import { DaftarPage } from '../pages/daftar/daftar';
     MasukPage,
     ContactPage,
     HistoryPage,
+<<<<<<< HEAD
     BelanjaPage,
     DaftarPage
+=======
+    BelanjaPage
+>>>>>>> 507ece62d2c23d3fce2177e18305f2df42d99f10
   ],
   imports: [
     BrowserModule,
@@ -40,8 +47,12 @@ import { DaftarPage } from '../pages/daftar/daftar';
     MasukPage,
     ContactPage,
     HistoryPage,
+<<<<<<< HEAD
     BelanjaPage,
     DaftarPage
+=======
+    BelanjaPage
+>>>>>>> 507ece62d2c23d3fce2177e18305f2df42d99f10
   ],
   providers: [
     StatusBar,

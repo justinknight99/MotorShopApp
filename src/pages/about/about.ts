@@ -13,6 +13,14 @@ export class AboutPage {
 
     }
   ]
+<<<<<<< HEAD
+=======
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public app : App) {}
+>>>>>>> 507ece62d2c23d3fce2177e18305f2df42d99f10
 
   constructor(
     public navCtrl: NavController, 
