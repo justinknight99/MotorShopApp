@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { DaftarPage } from '../daftar/daftar';
 import { TabsPage } from '../tabs/tabs';
 
 @IonicPage()
 @Component({
-  selector: 'page-masuk',
-  templateUrl: 'masuk.html',
+  selector: 'page-daftar',
+  templateUrl: 'daftar.html',
 })
-export class MasukPage {
+export class DaftarPage {
 
-  email : any
-  password : any
-
+  email : any;
+  password : any;
+  nama : any;
+  
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -20,16 +20,11 @@ export class MasukPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MasukPage');
+    console.log('ionViewDidLoad DaftarPage');
   }
 
-  //ini fungsi , seperti matematika f(x)= x + y
-  pindah(){
-    this.navCtrl.push(DaftarPage)
-  }
-
-  masuk(){
-    if(this.email && this.password)
+  daftar(){
+    if(this.email && this.password && this.nama)
     {
       if(this.password.length >= 8)
       {
@@ -47,7 +42,7 @@ export class MasukPage {
   showConfirm() {
     const confirm = this.alertCtrl.create({
       title: 'Data tidak lengkap',
-      message: 'isi email dan password Anda',
+      message: 'isi nama, email dan password Anda',
       buttons: [
         {
           text: 'Ok',
@@ -75,6 +70,5 @@ export class MasukPage {
     });
     confirm.present();
   }
-
 
 }

@@ -11,6 +11,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MasukPage } from '../pages/masuk/masuk';
+import { HistoryPage } from '../pages/history/history';
+import { BelanjaPage } from '../pages/belanja/belanja';
+import { DaftarPage } from '../pages/daftar/daftar';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { MasukPage } from '../pages/masuk/masuk';
     HomePage,
     TabsPage,
     MasukPage,
-    ContactPage
+    ContactPage,
+    HistoryPage,
+    BelanjaPage,
+    DaftarPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,10 @@ import { MasukPage } from '../pages/masuk/masuk';
     HomePage,
     TabsPage,
     MasukPage,
-    ContactPage
+    ContactPage,
+    HistoryPage,
+    BelanjaPage,
+    DaftarPage
   ],
   providers: [
     StatusBar,

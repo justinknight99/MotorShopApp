@@ -1,37 +1,25 @@
+<ion-content padding class="background">
+  <div text-center>
+    <img class="logo" src="https://image.flaticon.com/icons/svg/1683/1683886.svg">
+    <h3 style="color: #47525e">Motor Shop</h3>
+  </div>
 
-<ion-header>
+  <ion-list>
 
-    <ion-navbar>
-        <ion-title></ion-title>
-      </ion-navbar>
-    
-    </ion-header>
-    
-    <ion-content padding class="background">
-      <div text-center>
-        <img class="logo" src="">
-        <h3 style="color: #47525e">Motor Shop</h3>
-      </div>
-    
-      <ion-list>
-    
-        <ion-item>
-          <ion-label floating color="biruTua">Nama</ion-label>
-          <ion-input type="text" [(ngModel)]="nama"></ion-input>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label floating color="biruTua">Email</ion-label>
-          <ion-input type="text" [(ngModel)]="email"></ion-input>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label floating color="biruTua">Password</ion-label>
-          <ion-input type="password" [(ngModel)]="password"></ion-input>
-        </ion-item>
-    
-      </ion-list>
-    
-      <button ion-button block color="biruTua" (click)="daftar()">Masuk</button>
-    
-    </ion-content>
+
+    <ion-item>
+      <ion-label floating color="biruTua">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating color="biruTua">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block color="biruTua" (click)="masuk()">Masuk</button>
+  <button ion-button block clear color="biruTua" style="text-transform: none" (click)="pindah()">Belum Punya Akun? DAFTAR</button>
+
+</ion-content>
