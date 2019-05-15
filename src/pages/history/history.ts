@@ -19,8 +19,4 @@ export class HistoryPage {
     this.navCtrl.setRoot(HistoryPage)}
   
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 507ece62d2c23d3fce2177e18305f2df42d99f10
