@@ -1,3 +1,32 @@
 page-about {
-
+    .fav{
+        width: 2.5em;
+        height: 2.5em;
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 100%;
+    }
+    .pict {
+        width: 100%;
+        height: auto;
+    }
+    .JudulItem {
+        font-size: 1em;
+        font-weight: bold;
+        
+        display: block;
+        display: -webkit-box;
+        height: 3em;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .HargaItem {
+        font-size: 1em;
+        font-weight: bold;
+        color: #f53d3d;
+    }
 }

@@ -7,35 +7,25 @@
 </ion-header>
 
 
-<ion-content padding>
-  <div>
-<img src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/3/25911638/25911638_daca08a7-5c91-44a0-841d-6922ead14a0c_581_1032.jpg" alt="">
-<h4>Standar Paddock Universal CBR 150 Ninja R</h4>
-<li>Rp228.750</li>
+<ion-content text-center>
+  <ion-fab right bottom>
+    <button ion-fab color="BiruTua" (Click)="tambahfoto()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+  <ion-grid no-padding>
+    <ion-row no-padding>
+      <ion-col col-6 *ngFor="let data of dataBelanja" no-padding>
+        <button class="fav" clear ion-button icon-only (click)="ubahFav(data)">
+          <ion-icon *ngIf="!data.favorit" color="dark" name="heart-outline"></ion-icon>
+          <ion-icon *ngIf="data.favorit" color="danger" name="heart"></ion-icon>
+        </button>
+        <img class="gambar" [src]="data.foto" alt="picture">
+        <h4>............</h4>
+        <h5>harga</h5>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-
-<img src="https://s2.bukalapak.com/img/7834729601/w-1000/Lampu_LED_Projie_Tornado_Double_AE___DE__Red_Blue___Biru_.jpg" alt="">
-<h4>Lampu LED Projie motor tornado double AE+DE (Blue+Red)</h4>
-<li>Rp71.683
-    Rp99.900-28%</li>
-
-<img src="https://s4.bukalapak.com/img/9231452162/w-1000/SHOCK_DBS_ULIR_MERAH.jpg" alt="">
-<h4>Shock DBS Merah Tabung Silver</h4>
-<li>Rp175.084
-    Rp250.000-30%</li>
-
-<img src="https://s1.bukalapak.com/img/1263417242/w-1000/Spion_Standar_Yamaha_Model_Jupiter___Spion_.png" alt="">
-<h4>spion standar model mio</h4>
-<li>Rp20.500</li>
-
-<img src="https://id-test-11.slatic.net/original/eee623cb609ad25b23c6ff1f9163ae21.jpg_200x200q75.jpg_.webp" alt="">
-<h4>Saklar Wrna Tombol Khusus Motor Honda Yang Ada Tombol Idlingnya Saklar Tombol On/off Warna Biru</h4>
-<li>Rp55.000
-    Rp90.000-39%</li>
-
-<img src="https://ecs7.tokopedia.net/img/cache/700/product-1/2019/2/26/49146268/49146268_e490cf48-9790-46d0-8936-1fbc9b5952ea_640_640.jpg" alt="">
-<h4>Hanfat Handgrip Daytona black grey 2738 universal mio beat vario jupiter cbr vixion nmax</h4>
-<li>Rp69.900</li>
-</div>
 
 </ion-content>
