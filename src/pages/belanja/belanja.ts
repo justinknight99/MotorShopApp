@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import { BelanjaRinciPage } from '../belanja-rinci/belanja-rinci';
 
 
 @IonicPage()
@@ -55,7 +56,7 @@ export class BelanjaPage {
   ]
 
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
   }
 
   ionViewDidLoad() {
@@ -69,5 +70,9 @@ export class BelanjaPage {
   ubahFav(data){
     this.dataBelanja[data].favorit = !this.dataBelanja[data.id].favorit
   }
+  bukaRinci(data){
+    this.app.getRootNav().push(BelanjaRinciPage, data)
+  }
+
 
 }

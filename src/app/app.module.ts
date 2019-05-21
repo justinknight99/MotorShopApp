@@ -14,6 +14,7 @@ import { MasukPage } from '../pages/masuk/masuk';
 import { HistoryPage } from '../pages/history/history';
 import { BelanjaPage } from '../pages/belanja/belanja';
 import { DaftarPage } from '../pages/daftar/daftar';
+import { BelanjaRinciPage } from '../pages/belanja-rinci/belanja-rinci';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DaftarPage } from '../pages/daftar/daftar';
     ContactPage,
     HistoryPage,
     BelanjaPage,
-    DaftarPage
+    DaftarPage,
+    BelanjaRinciPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { DaftarPage } from '../pages/daftar/daftar';
     ContactPage,
     HistoryPage,
     BelanjaPage,
-    DaftarPage
+    DaftarPage,
+    BelanjaRinciPage
   ],
   providers: [
     StatusBar,
